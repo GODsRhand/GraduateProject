@@ -10,9 +10,9 @@
 2. 卸载原依赖: `pip uninstall -y -r requirement.txt`
 3. 配置新依赖: `pip install -r requirements.txt`
 4. 模型训练：
-   - 需要设置训练的掩蔽率`masked_rate`,训练集文件`train_set`，测试集文件`test_set`和测试集答案`answer_set`
+   - 需要设置训练的掩蔽率`masked_rate`,训练集文件`train_set`，测试集文件`test_set`
+   - 可使用多个GPU并行计算，如使用0,1,2号GPU`--gpus 012`
    - 数据文件请放在`./data/1KGPMLM`下
-   - 其中`test_set`需已掩蔽好
 5. 只用于补全任务时，请设置`--inference` 
 
 ### Environment
